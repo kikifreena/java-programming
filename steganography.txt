@@ -1,0 +1,60 @@
+if (x < width && y < height){
+     var np = n.getPixel(x,y);
+     np.setRed(p.getRed());
+     np.setBlue(p.getBlue());
+     np.setGreen(p.getGreen()); 
+}
+
+var cropWidth = start.getWidth();
+if (hide.getWidth() < cropWidth) {
+	cropWidth = hide.getWidth();
+}
+var cropHeight = start.getHeight();
+if (hide.getHeight() < cropHeight) {
+	cropHeight = hide.getHeight();
+}
+start = crop(start,cropWidth, cropHeight);
+hide = crop(hide,cropWidth, cropHeight);
+print(start);
+print(hide);
+
+192
+
+10
+
+not 11011000. or 10100100 or 10101101 it will mostly look like image 2
+
+function newpv(p,q) {
+     var answer = p + q;
+     if (p + q > 255)   print("error: answer too big");     return answer;
+}
+
+
+not
+
+var x = pa.getX();
+var y = pa.getY();
+var pb = b.getPixel(x,y);
+var np = n.getPixel(x,y);
+pa.setRed(newpv(pa.getRed(),pb.getRed()));
+pa.setGreen(newpv(pa.getGreen(),pb.getGreen()));
+pa.setBlue(newpv(pa.getBlue(),pb.getBlue()));
+
+^ should probably be same as above but with np. instead of pa.
+
+var np = n.getPixel(pa.getX(), pa,getY());
+np.setRed(newpv(pa.getRed(),pb.getRed()));
+np.setGreen(newpv(pa.getGreen(),pb.getGreen()));
+np.setBlue(newpv(pa.getBlue(),pb.getBlue()));
+
+because pb needs a value
+
+var x = pa.getX();
+var pb = b.getPixel(x,y);
+var y = pb.getY();
+var np = n.getPixel(x,y);
+np.setRed(newpv(pa.getRed(),pb.getRed()));
+np.setGreen(newpv(pa.getGreen(),pb.getGreen()));
+np.setBlue(newpv(pa.getBlue(),pb.getBlue()));
+
+y has no value yet
